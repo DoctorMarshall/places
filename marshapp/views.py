@@ -1,0 +1,48 @@
+from django.shortcuts import render
+
+
+from django.http import HttpResponse
+from django.views.generic import View
+from django.template import Template, Context
+
+
+import requests
+import json
+
+from marshapp.pizza import Pizza
+
+
+class MainView(View):
+
+    def get(self, request, *args, **kwargs):
+    
+        lat = request.GET.get('lat','50')    
+        lng = request.GET.get('lng','19')
+
+        template = Template("""
+            <html>
+                <head>
+                    <title>Pizza Finder</title>
+                </head>
+                <body>
+                    <h1>Pizza Finder</h1>
+                    <form>{% csrf_token %}
+                        Latitude: <input type="text" name="lat"><br>
+                        Longitude: <input type="text" name="lng"><br>
+
+                        <input type="submit" value="Submit">
+                    </form> 
+                <ul>
+                    {% for result in results %}
+                        <li>
+                        <b>{{ result.name }}</b> Rating: {{ result.rating}}
+                        </li>
+
+                    {% endfor %}
+                </ul>
+                </body>
+            </html>
+        """)
+        context = Context(Pizza.find(float(lat), float(lng),'AIzaSyAi76SIbkDWIal4aPHg5FPCk-fLvV-xSnc'))
+        
+        return HttpResponse(template.render(context))
