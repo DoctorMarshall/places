@@ -12,6 +12,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-	 url(r'^$', marshapp.views.LoginView.as_view(), name='login'),
+	 url(r'^$', marshapp.views.LoginView.as_view(), name='main'),
     url(r'^pizza', marshapp.views.MainView.as_view(), name='main'),
 )

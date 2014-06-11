@@ -54,10 +54,8 @@ WSGI_APPLICATION = 'marshproj.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
 # apt-get install python-mysqldb
 
-#useless
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
