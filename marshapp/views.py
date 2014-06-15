@@ -89,14 +89,16 @@ class MainView(View):
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                     <option value="5">5</option>
-                                </select><br />
+                                </select>
+                                <br />
+                                <h5 style="font-size: 16">Insert your comment here:</h5>
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
                             <form action="">
-                                <input size: 17" type="hidden" name="login" value="{{ login }}" />
+                                <input size: 17" type="text" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
-                                <input size: 12" style="font-size: 12" type="text" name="comment" /><br />
+                                <input size: 12" style="font-size: 17" type="text" name="comment" /><br />
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
