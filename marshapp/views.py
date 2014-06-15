@@ -135,7 +135,7 @@ class LoginView(View):
                         Login: <input type="text" name="login"><br>
                         Password: <input type="password" name="pass"><br>
 
-                        <input style="text-align:right;" type="submit" value="Login/Register">
+                        <input style="align:right;" type="submit" value="Login/Register">
                     </form> 
                 </body>
                 </div>
