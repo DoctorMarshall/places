@@ -32,7 +32,7 @@ class MainView(View):
             <html>
                 <head>
                     <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
-                    <title>Pizza Finder</title>
+                    <h3><title>Pizza Finder</title><h3>
                 </head>
                 <body>
                     <h1>Pizza Finder</h1>
