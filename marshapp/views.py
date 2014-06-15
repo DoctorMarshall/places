@@ -92,16 +92,17 @@ class MainView(View):
                                 </select>
                                 <br />
                                 <input type="submit" value="Submit">
-                            <br /><br><b style="font-size: 16; color: 0F726E">Insert your comment here:</b>
+                                <br />
                             </form>
                             <form style="display: inline"action="">
+                                <b style="font-size: 16; color: 0F726E">Insert your comment here:</b>
                                 <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
                                 <input type="text" name="comment" /><br />
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
-                            <b style="font-size: 16; color: 0F726E">Comments:</b>
+                            <br /><b style="font-size: 16; color: 0F726E">Comments:</b>
                             <ul>
                             {% for comment in result.comments %}
                                 <li><b style="font-size: 14; color: #300000"" >{{ comment.0 }}: </b><b style="font-size: 12" >{{comment.1 }}</b></li>
