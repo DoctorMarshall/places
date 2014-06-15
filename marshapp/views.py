@@ -93,12 +93,11 @@ class MainView(View):
                                 <br />
                                 <h5 style="font-size: 16">Insert your comment here:</h5>
                                 <input type="submit" value="Submit">
-                                <br />
                             </form>
                             <form action="">
-                                <input size="17" type="hidden" name="login" value="{{ login }}" />
+                                <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
-                                <input size="12" style="font-size: 17" type="text" name="comment" /><br />
+                                <input size="8" style="font-size: 17" type="text" name="comment" /><br />
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
