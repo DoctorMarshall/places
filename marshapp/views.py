@@ -48,7 +48,7 @@ class MainView(View):
                     	background-color: rgba(255, 255, 255, 0.4); 
                     	width: 400px;
                         height: 200px;
-                    	position: absolute;
+                    	position: static;
                         top:0;
                         bottom: 0;
                         left: 0;
@@ -66,10 +66,10 @@ class MainView(View):
                 <ul>
                         <div style="
                         	background-color: rgba(255, 255, 255, 0.7); 
-                        	width: 700px;
+                        	width: 800px;
                             height: auto;
                         	position: absolute;
-                            top:100;
+                            top:400;
                             bottom: 0;
                             left: 0;
                             right: 0;
