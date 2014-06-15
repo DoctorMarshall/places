@@ -30,17 +30,6 @@ class MainView(View):
 
         template = Template("""
             <html>
-                    <div style="
-                	background-color: rgba(255, 255, 255, 0.6); 
-                	width: 400px;
-                    height: 200px;
-                	position: absolute;
-                    top:0;
-                    bottom: 100;
-                    left: 0;
-                    right: 0;
-                	margin: auto;
-                	border-radius: 10px;">
                 <head>
                     <h3><title>Pizza Finder</title><h3>
                 </head>
@@ -55,14 +44,36 @@ class MainView(View):
                     }
                 </style>
                 <body>
-                    <h1>Pizza Finder</h1>
+                    <div style="
+                    	background-color: rgba(255, 255, 255, 0.4); 
+                    	width: 400px;
+                        height: auto;
+                    	position: absolute;
+                        top:0;
+                        bottom: 100;
+                        left: 0;
+                        right: 0;
+                    	margin: auto;
+                    	border-radius: 10px;">
+                    	
+                    <h1 style="text-align:center;">Pizza Finder</h1>
                     <form>{% csrf_token %}
                         Latitude: <input type="text" name="lat"><br>
                         Longitude: <input type="text" name="lng"><br>
-
-                        <input type="submit" value="Submit">
+                        <input style="float:right" type="submit" value="Submit">
                     </form> 
-                <ul>
+                    </div>
+                <ul style="
+                    	background-color: rgba(255, 255, 255, 0.7); 
+                    	width: 700px;
+                        height: 200px;
+                    	position: absolute;
+                        top:0;
+                        bottom: 100;
+                        left: 0;
+                        right: 0;
+                    	margin: auto;
+                    	border-radius: 10px;">
                     {% for result in results %}
                         <li>
                             <b>{{ result.name }}</b> Your rating: {{result.myrating}}  Overall rating: {{result.overalrating}}<br />
@@ -97,7 +108,6 @@ class MainView(View):
                     {% endfor %}
                 </ul>
                 </body>
-                </div>
             </html>
         """)
         if rating != '0':
@@ -147,7 +157,7 @@ class LoginView(View):
                         Login: <input  type="text" name="login"><br>
                         Password: <input  type="password" name="pass"><br><br>
 
-                        <input  style="float:right" type="submit" value="Login/Register">
+                        <input style="float:right" type="submit" value="Login/Register">
                     </form> 
                 </body>
                 </div>
