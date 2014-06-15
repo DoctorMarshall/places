@@ -94,9 +94,9 @@ class MainView(View):
                                 <br />
                             </form>
                             <form action="">
-                                <input style="font-size: 17" type="hidden" name="login" value="{{ login }}" />
+                                <h2  style="font-size: 17"><input type="hidden" name="login" value="{{ login }}" /></h2>
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
-                                <input style="font-size: 12" type="text" name="comment" /><br />
+                                <h4  style="font-size: 12"><input style="font-size: 12" type="text" name="comment" /><br /></h4>
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
