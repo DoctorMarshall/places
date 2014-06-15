@@ -65,7 +65,7 @@ class MainView(View):
                     </div>
 
                         <div style="
-                        	background-color: rgba(255, 255, 255, 0.4); 
+                        	background-color: rgba(255, 255, 255, 0.55); 
                         	width: auto;
                             height: auto;
                         	position: static;
