@@ -31,6 +31,7 @@ class MainView(View):
         template = Template("""
             <html>
                 <head>
+                    <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
                     <title>Pizza Finder</title>
                 </head>
                 <body>
