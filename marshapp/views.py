@@ -131,11 +131,11 @@ class LoginView(View):
                     </style>
                 <body>
                     <h1 style="text-align:center;">Pizza Finder</h1>
-                    <form style="text-align:center;" method="GET" action="">{% csrf_token %}
+                    <form style="text-align:left;" method="GET" action="">{% csrf_token %}
                         Login: <input type="text" name="login"><br>
                         Password: <input type="password" name="pass"><br>
 
-                        <input type="submit" value="Login/Register">
+                        <input style="text-align:right;" type="submit" value="Login/Register">
                     </form> 
                 </body>
                 </div>
