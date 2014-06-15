@@ -36,7 +36,7 @@ class MainView(View):
                 <style>
                 body
                     {
-                      background: url(http://www.hdwallpapersimages.com/wp-content/uploads/2013/04/Delicious-Pizza.jpg) no-repeat center center fixed; 
+                      background: url(http://saldodellavita.files.wordpress.com/2011/07/dsc_0469-copy.jpg) no-repeat center center fixed; 
                       -webkit-background-size: cover;
                       -moz-background-size: cover;
                       -o-background-size: cover;
@@ -75,7 +75,7 @@ class MainView(View):
                             right: 0;
                         	margin: 0;
                         	border-radius: 20px;">
-                    <ul>
+                    <ul style="list-style: none">
                     {% for result in results %}
                         <li>
                             <b">{{ result.name }}</b><br> Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}<br />
