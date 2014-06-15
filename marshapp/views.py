@@ -50,7 +50,7 @@ class MainView(View):
                         height: 200px;
                     	position: absolute;
                         top:0;
-                        bottom: 100;
+                        bottom: 0;
                         left: 0;
                         right: 0;
                     	margin: auto;
@@ -63,17 +63,18 @@ class MainView(View):
                         <input style="float:right" type="submit" value="Submit">
                     </form> 
                     </div>
-                <ul style="
-                    	background-color: rgba(255, 255, 255, 0.7); 
-                    	width: 700px;
-                        height: auto;
-                    	position: absolute;
-                        top:0;
-                        bottom: 10;
-                        left: 0;
-                        right: 0;
-                    	margin: auto;
-                    	border-radius: 10px;">
+                <ul>
+                        <div style="
+                        	background-color: rgba(255, 255, 255, 0.7); 
+                        	width: 700px;
+                            height: auto;
+                        	position: absolute;
+                            top:100;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                        	margin: auto;
+                        	border-radius: 10px;">
                     {% for result in results %}
                         <li>
                             <b>{{ result.name }}</b> Your rating: {{result.myrating}}  Overall rating: {{result.overalrating}}<br />
@@ -106,6 +107,7 @@ class MainView(View):
                         </li>
                         <hr />
                     {% endfor %}
+                </div>
                 </ul>
                 </body>
             </html>
