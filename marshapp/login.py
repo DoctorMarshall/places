@@ -1,12 +1,12 @@
 import requests
 import json
 import mysql.connector
-import hashlib
+import hashlib #for hashing the password
 
 class Login:
-    @staticmethod
+    @staticmethod #python version problem
     def login(login,password):
-        config = {
+        config = { #had to do it cuz setting didnt work
             'database': 'andmar',
             'user': 'andmar',
             'password': 'G8euWMWW',
