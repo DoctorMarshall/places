@@ -34,6 +34,16 @@ class MainView(View):
                     <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
                     <h3><title>Pizza Finder</title><h3>
                 </head>
+                <style>
+body
+{
+  background: url(http://photobackstory.files.wordpress.com/2011/09/2336-32-maine-sunrise.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
                 <body>
                     <h1>Pizza Finder</h1>
                     <form>{% csrf_token %}
