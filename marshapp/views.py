@@ -66,7 +66,7 @@ class MainView(View):
 
                         <div style="
                         	background-color: rgba(255, 255, 255, 0.4); 
-                        	width: 600;
+                        	width: auto;
                             height: auto;
                         	position: static;
                             top:0;
@@ -78,7 +78,7 @@ class MainView(View):
                     <ul style="list-style: none">
                     {% for result in results %}
                         <li>
-                            <b style="font-size: 10">{{ result.name }}</b><br> Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}<br />
+                            <b style="font-size: 20">{{ result.name }}</b><br> <h1 style="font-size: 15">Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}</h1><br />
                             <form action="">
                                 <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
