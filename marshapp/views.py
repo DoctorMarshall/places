@@ -30,6 +30,17 @@ class MainView(View):
 
         template = Template("""
             <html>
+                    <div style="
+                	background-color: rgba(255, 255, 255, 0.6); 
+                	width: 400px;
+                    height: 200px;
+                	position: absolute;
+                    top:0;
+                    bottom: 100;
+                    left: 0;
+                    right: 0;
+                	margin: auto;
+                	border-radius: 10px;">
                 <head>
                     <h3><title>Pizza Finder</title><h3>
                 </head>
@@ -42,7 +53,7 @@ class MainView(View):
                       -o-background-size: cover;
                       background-size: cover;
                     }
-                    </style>
+                </style>
                 <body>
                     <h1>Pizza Finder</h1>
                     <form>{% csrf_token %}
@@ -86,6 +97,7 @@ class MainView(View):
                     {% endfor %}
                 </ul>
                 </body>
+                </div>
             </html>
         """)
         if rating != '0':
@@ -116,7 +128,7 @@ class LoginView(View):
                     right: 0;
                 	margin: auto;
                 	border-radius: 10px;">
-                                <head>
+                <head>
                     <title>Pizza Finder - Login</title>
                 </head>
                 <style>
@@ -132,8 +144,8 @@ class LoginView(View):
                 <body>
                     <h1 style="text-align:center;">Pizza Finder</h1>
                     <form method="GET" action="">{% csrf_token %}
-                        Login: <input  style="float:center" type="text" name="login"><br>
-                        Password: <input  style="float:center" type="password" name="pass"><br><br>
+                        Login: <input  type="text" name="login"><br>
+                        Password: <input  type="password" name="pass"><br><br>
 
                         <input  style="float:right" type="submit" value="Login/Register">
                     </form> 
