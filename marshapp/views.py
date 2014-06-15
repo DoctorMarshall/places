@@ -92,7 +92,7 @@ class MainView(View):
                                 </select>
                                 <br />
                                 <input type="submit" value="Submit">
-                            <h5 style="font-size: 16">Insert your comment here:</h5>
+                            <b style="font-size: 16; color: #300000">Insert your comment here:</b>
                             </form>
                             <form action="">
                                 <input type="hidden" name="login" value="{{ login }}" />
