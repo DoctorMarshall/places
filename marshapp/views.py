@@ -74,7 +74,8 @@ class MainView(View):
                             left: 0;
                             right: 0;
                         	margin: auto;
-                        	border-radius: 10px;">
+                        	float:left
+                        	border-radius: 0px;">
                     {% for result in results %}
                         <li>
                             <b>{{ result.name }}</b> Your rating: {{result.myrating}}  Overall rating: {{result.overalrating}}<br />
