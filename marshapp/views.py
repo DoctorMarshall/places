@@ -91,19 +91,19 @@ class MainView(View):
                                     <option value="5">5</option>
                                 </select>
                                 <br />
-                                <h5 style="font-size: 16">Insert your comment here:</h5>
                                 <input type="submit" value="Submit">
+                            <h5 style="font-size: 16">Insert your comment here:</h5>
                             </form>
                             <form action="">
                                 <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
-                                <input size="8" style="font-size: 17" type="text" name="comment" /><br />
+                                <input type="text" name="comment" /><br />
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
                             <ul>
                             {% for comment in result.comments %}
-                                <li><b>{{ comment.0 }}: </b>{{comment.1 }}</li>
+                                <li><b style="font-size: 17" >{{ comment.0 }}: </b><b style="font-size: 12" >{{comment.1 }}</b></li>
                             {% endfor %}
                             </ul>
                         </li>
