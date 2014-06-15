@@ -47,7 +47,7 @@ class MainView(View):
                     <div style="
                     	background-color: rgba(255, 255, 255, 0.4); 
                     	width: 400px;
-                        height: 200px;
+                        height: 170px;
                     	position: static;
                         top:0;
                         bottom: 0;
@@ -68,8 +68,8 @@ class MainView(View):
                         	background-color: rgba(255, 255, 255, 0.7); 
                         	width: 800px;
                             height: auto;
-                        	position: absolute;
-                            top:400;
+                        	position: static;
+                            top:0;
                             bottom: 0;
                             left: 0;
                             right: 0;
