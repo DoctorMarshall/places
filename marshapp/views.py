@@ -74,10 +74,10 @@ class MainView(View):
                             left: 0;
                             right: 0;
                         	margin: 10px;
-                        	border-radius: 20px;">
+                        	border-radius: 2;">
                     {% for result in results %}
                         <li>
-                            <b>{{ result.name }}</b> Your rating: {{result.myrating}}  Overall rating: {{result.overalrating}}<br />
+                            <b>{{ result.name }}</b> Your rating: {{result.myrating}} <b /r> Overall rating: {{result.overalrating}}<br />
                             <form action="">
                                 <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
@@ -93,7 +93,7 @@ class MainView(View):
                                 <br />
                             </form>
                             <form action="">
-                                <input type="hidden" name="login" value="{{ login }}" /><br>
+                                <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
                                 <input type="text" name="comment" /><br />
                                 <input type="submit" value="Submit">
