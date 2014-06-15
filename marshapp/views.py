@@ -78,7 +78,7 @@ class MainView(View):
                     <ul style="list-style: none">
                     {% for result in results %}
                         <li>
-                            <b style="font-size: 20">{{ result.name }}</b><br> <h1 style="font-size: 15">Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}</h1><br />
+                            <b style="font-size: 20">{{ result.name }}</b> <h1 style="font-size: 15">Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}</h1>
                             <form action="">
                                 <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
@@ -94,9 +94,9 @@ class MainView(View):
                                 <br />
                             </form>
                             <form action="">
-                                <input type="hidden" name="login" value="{{ login }}" />
+                                <input style="font-size: 17" type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
-                                <input type="text" name="comment" /><br />
+                                <input style="font-size: 12" type="text" name="comment" /><br />
                                 <input type="submit" value="Submit">
                                 <br />
                             </form>
