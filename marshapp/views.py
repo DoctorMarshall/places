@@ -36,7 +36,7 @@ class MainView(View):
                 <style>
                 body
                     {
-                      background: url(http://saldodellavita.files.wordpress.com/2011/07/dsc_0469-copy.jpg) no-repeat center center fixed; 
+                      background: url(http://hqwallbase.com/images/big/_delicious_pizza-1569933.jpg) no-repeat center center fixed; 
                       -webkit-background-size: cover;
                       -moz-background-size: cover;
                       -o-background-size: cover;
