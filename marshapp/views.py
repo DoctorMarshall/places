@@ -105,9 +105,30 @@ class LoginView(View):
 
         template = Template("""
             <html>
-                <head>
+            <div style="
+                	background-color: rgba(255, 255, 255, 0.6); 
+                	width: 400px;
+                    height: 200px;
+                	position: absolute;
+                    top:0;
+                    bottom: 100;
+                    left: 0;
+                    right: 0;
+                	margin: auto;
+                	border-radius: 10px;">
+                                <head>
                     <title>Pizza Finder - Login</title>
                 </head>
+                <style>
+                body
+                    {
+                      background: url(http://www.hdwallpapersimages.com/wp-content/uploads/2013/04/Delicious-Pizza.jpg) no-repeat center center fixed; 
+                      -webkit-background-size: cover;
+                      -moz-background-size: cover;
+                      -o-background-size: cover;
+                      background-size: cover;
+                    }
+                    </style>
                 <body>
                     <h1>Pizza Finder</h1>
                     <form method="GET" action="">{% csrf_token %}
@@ -117,6 +138,7 @@ class LoginView(View):
                         <input type="submit" value="Login/Register">
                     </form> 
                 </body>
+                </div>
             </html>
         """)
         context = RequestContext(request)
