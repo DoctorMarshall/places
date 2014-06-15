@@ -69,7 +69,7 @@ class MainView(View):
                         height: auto;
                     	position: absolute;
                         top:0;
-                        bottom: 100;
+                        bottom: 10;
                         left: 0;
                         right: 0;
                     	margin: auto;
