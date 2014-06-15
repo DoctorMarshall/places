@@ -36,7 +36,7 @@ class MainView(View):
                 <style>
                 body
                     {
-                      background: url(http://hqwallbase.com/images/big/_delicious_pizza-1569933.jpg) no-repeat center center fixed; 
+                      background: url(http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg) no-repeat center center fixed; 
                       -webkit-background-size: cover;
                       -moz-background-size: cover;
                       -o-background-size: cover;
@@ -78,7 +78,7 @@ class MainView(View):
                     <ul style="list-style: none">
                     {% for result in results %}
                         <li>
-                            <b">{{ result.name }}</b><br> Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}<br />
+                            <b style="font-size: 10">{{ result.name }}</b><br> Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}<br />
                             <form action="">
                                 <input type="hidden" name="login" value="{{ login }}" />
                                 <input type="hidden" name="place-id" value="{{ result.id }}" />
