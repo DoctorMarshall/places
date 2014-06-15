@@ -63,7 +63,7 @@ class MainView(View):
                         <input style="float:right" type="submit" value="Submit">
                     </form> 
                     </div>
-                <ul>
+
                         <div style="
                         	background-color: rgba(255, 255, 255, 0.7); 
                         	width: auto;
@@ -75,6 +75,7 @@ class MainView(View):
                             right: 0;
                         	margin: 0;
                         	border-radius: 20px;">
+                    <ul>
                     {% for result in results %}
                         <li>
                             <b">{{ result.name }}</b><br> Your rating: {{result.myrating}} <br> Overall rating: {{result.overalrating}}<br />
