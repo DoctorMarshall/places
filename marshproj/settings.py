@@ -60,12 +60,12 @@ WSGI_APPLICATION = 'marshproj.wsgi.application'
 #useless
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
+        'ENGINE': 'django.db.backends.sqlite3', 
         'NAME': 'andmar',
-        'USER': 'andmar',
-        'PASSWORD': 'G8euWMWW',
-        'HOST': 'http://mysql.agh.edu.pl',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
+        #'USER': 'andmar',
+       # 'PASSWORD': 'G8euWMWW',
+      #  'HOST': 'http://mysql.agh.edu.pl',   # Or an IP Address that your DB is hosted on
+       # 'PORT': '3306',
     }
 }
 
